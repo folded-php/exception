@@ -2,6 +2,8 @@
 
 Various kind of exception to throw for your web app.
 
+[![Build Status](https://travis-ci.com/folded-php/exception.svg?branch=master)](https://travis-ci.com/folded-php/exception) [![Maintainability](https://api.codeclimate.com/v1/badges/1a4cd312ebd463342bef/maintainability)](https://codeclimate.com/github/folded-php/exception/maintainability)
+
 ## Summary
 
 - [About](#about)
