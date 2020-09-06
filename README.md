@@ -2,7 +2,7 @@
 
 Various kind of exception to throw for your web app.
 
-[![Build Status](https://travis-ci.com/folded-php/exception.svg?branch=master)](https://travis-ci.com/folded-php/exception) [![Maintainability](https://api.codeclimate.com/v1/badges/1a4cd312ebd463342bef/maintainability)](https://codeclimate.com/github/folded-php/exception/maintainability)
+[![Packagist License](https://img.shields.io/packagist/l/folded/exception)](https://github.com/folded-php/exception/blob/master/LICENSE) [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/folded/exception)](https://github.com/folded-php/exception/blob/master/composer.json#L14) [![Packagist Version](https://img.shields.io/packagist/v/folded/exception)](https://packagist.org/packages/folded/exception) [![Build Status](https://travis-ci.com/folded-php/exception.svg?branch=master)](https://travis-ci.com/folded-php/exception) [![Maintainability](https://api.codeclimate.com/v1/badges/1a4cd312ebd463342bef/maintainability)](https://codeclimate.com/github/folded-php/exception/maintainability)
 
 ## Summary
 
