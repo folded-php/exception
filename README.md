@@ -46,10 +46,10 @@ Keep in mind you are not forced to do it, and can just throw a message like you 
 
 Using the methods you will discover below has the advantage to be able to give more context and facilitate the debugging when using an error management services such as Sentry, with its capability to [store additional data](https://docs.sentry.io/platforms/php/enriching-error-data/additional-data/manage-context/).
 
-- [1. FolderNotFoundException](#1-folder-not-found-exception)
-- [2. MethodNotAllowedException](#2-method-not-allowed-exception)
-- [3. NotAFolderException](#3-not-a-folder-exception)
-- [4. UrlNotFoundException](#4-url-not-found-exception)
+- [1. FolderNotFoundException](#1-foldernotfoundexception)
+- [2. MethodNotAllowedException](#2-methodnotallowedexception)
+- [3. NotAFolderException](#3-notafolderexception)
+- [4. UrlNotFoundException](#4-urlnotfoundexception)
 - [5. HistoryNotFoundException](#5-historynotfoundexception)
 
 ### 1. FolderNotFoundException
