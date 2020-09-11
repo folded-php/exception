@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] 2020-09-11
+
+### Added
+
+- New exception `HistoryNotFoundException` to deal with index not found in a browser history modelized on the back end.
+
 ## [0.1.0] 2020-09-06
 
 ### Added

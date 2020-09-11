@@ -50,6 +50,7 @@ Using the methods you will discover below has the advantage to be able to give m
 - [2. MethodNotAllowedException](#2-method-not-allowed-exception)
 - [3. NotAFolderException](#3-not-a-folder-exception)
 - [4. UrlNotFoundException](#4-url-not-found-exception)
+- [5. HistoryNotFoundException](#5-historynotfoundexception)
 
 ### 1. FolderNotFoundException
 
@@ -128,8 +129,28 @@ try {
 }
 ```
 
+### 5. HistoryNotFoundException
+
+In this example, we will throw an exception when an history is not found on a browser history manager.
+
+Check [folded/history](https://github.com/folded-php/history) for an example of package that deals with the browser history on back-end.
+
+```php
+use Folded\Exceptions\HistoryNotFoundException;
+
+try {
+  $exception = new HistoryNotFoundException("history 1 not found");
+  $exception->setIndex(1);
+
+  throw $exception;
+} catch (HistoryNotFoundException $exception) {
+  echo "index {$exception->getIndex()} not found in the history";
+}
+```
+
 ## Version support
 
 |        | 7.3 | 7.4 | 8.0 |
 | ------ | --- | --- | --- |
 | v0.1.0 | ❌  | ✔️  | ❓  |
+| v0.1.1 | ❌  | ✔️  | ❓  |
