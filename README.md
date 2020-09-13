@@ -7,6 +7,7 @@ Various kind of exception to throw for your web app.
 ## Summary
 
 - [About](#about)
+- [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Examples](#examples)
@@ -28,6 +29,11 @@ Folded is a constellation of packages to help you setting up a web app easily, u
 - [folded/request](https://github.com/folded-php/request): Request utilities, including a request validator, for your PHP web app.
 - [folded/routing](https://github.com/folded-php/routing): Routing functions for your PHP web app.
 - [folded/view](https://github.com/folded-php/view): View utilities for your PHP web app.
+
+## Features
+
+- Contains some exception to throw
+- The exceptions contains methods to set additional data (like the folder path for the `FolderNotFoundException` for example) and retrieve these data
 
 ## Requirements
 
