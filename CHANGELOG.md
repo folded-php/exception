@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- New exception `RouteNotFoundException` to represents route name that is not found (using a router).
+
 ## [0.1.1] 2020-09-11
 
 ### Added
