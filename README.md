@@ -61,6 +61,7 @@ Using the methods you will discover below has the advantage to be able to give m
 - [3. NotAFolderException](#3-notafolderexception)
 - [4. UrlNotFoundException](#4-urlnotfoundexception)
 - [5. HistoryNotFoundException](#5-historynotfoundexception)
+- [6. RouteNotFoundException](#6-routenotfoundexception)
 
 ### 1. FolderNotFoundException
 
@@ -155,6 +156,23 @@ try {
   throw $exception;
 } catch (HistoryNotFoundException $exception) {
   echo "index {$exception->getIndex()} not found in the history";
+}
+```
+
+### 6. RouteNotFoundException
+
+In this example, we will throw an exception if a route name is not found (when using a router for example).
+
+```php
+use Folded\Exceptions\RouteNotFoundException;
+
+try {
+  $exception = new RouteNotFoundException("route /about-us not found");
+  $exception->setRoute("/about-us");
+
+  throw $exception;
+} catch (RouteNotFoundException $exception) {
+  echo "route {$exception->getRoute()} not found";
 }
 ```
 
