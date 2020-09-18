@@ -65,6 +65,7 @@ Using the methods you will discover below has the advantage to be able to give m
 - [4. UrlNotFoundException](#4-urlnotfoundexception)
 - [5. HistoryNotFoundException](#5-historynotfoundexception)
 - [6. RouteNotFoundException](#6-routenotfoundexception)
+- [7. SessionKeyNotFoundException](7-sessionkeynotfoundexception)
 
 ### 1. FolderNotFoundException
 
@@ -176,6 +177,23 @@ try {
   throw $exception;
 } catch (RouteNotFoundException $exception) {
   echo "route {$exception->getRoute()} not found";
+}
+```
+
+### 7. SessionKeyNotFoundException
+
+In this example, we will throw an exception if a key is not found in a session array.
+
+```php
+use Folded\Exceptions\SessionKeyNotFoundException;
+
+try {
+  $exception = new SessionKeyNotFoundException("key foo not found");
+  $exception->setKey("foo");
+
+  throw $exception;
+} catch (SessionKeyNotFoundException $exception) {
+  echo "key {$exception->getKey()} not found";
 }
 ```
 
