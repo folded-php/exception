@@ -23,3 +23,13 @@ it("should set the method not allowed", function (): void {
         expect($exception->getMethodNotAllowed())->toBe($methodNotAllowed);
     }
 });
+
+it("should set the url from where is not allowed", function (): void {
+    $url = "/";
+
+    try {
+        throw (new MethodNotAllowedException("method GET not allowed"))->setUrl($url);
+    } catch (MethodNotAllowedException $exception) {
+        expect($exception->getUrl())->toBe($url);
+    }
+});
