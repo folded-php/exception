@@ -97,12 +97,14 @@ try {
 
   $exception->setMethodNotAllowed("GET");
   $exception->setAllowedMethods(["POST", "DELETE"]);
+  $exception->setUrl("/post/store");
 
   throw $exception;
 } catch (MethodNotAllowedException $exception) {
-  echo "method not allowed: {$exception->getMethodNotAllowed()}";
-
+  $url = $exception->getUrl();
   $allowedMethods = $exception->getAllowedMethods();
+
+  echo "method not allowed on URL $url: {$exception->getMethodNotAllowed()}";
 
   foreach ($allowedMethods as $allowedMethod) {
     echo "allowed method: $allowedMethod";
