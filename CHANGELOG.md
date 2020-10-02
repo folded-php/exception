@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] 2020-10-02
+
+### Added
+
+- New method `->setUrl()` and `->getUrl()` to set the url in a `MethodNotAllowedException` (thank you [amstr4d](https://github.com/amstr4d)).
+
 ## [0.3.0] 2020-09-18
 
 ### Added
