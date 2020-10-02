@@ -28,7 +28,9 @@ class MethodNotAllowedException extends Exception
     private string $methodNotAllowed;
 
     /**
-     * The URL from where the method is not allowed
+     * The URL from where the method is not allowed.
+     *
+     * @since 0.4.0
      */
     private string $url;
 
@@ -92,7 +94,9 @@ class MethodNotAllowedException extends Exception
     }
 
     /**
-     * Get the URL from where the method is not allowed
+     * Get the URL from where the method is not allowed.
+     *
+     * @since 0.4.0
      *
      * @example
      * $exception = new MethodNotAllowedException("method GET not allowed");
@@ -141,7 +145,9 @@ class MethodNotAllowedException extends Exception
     }
 
     /**
-     * Set the URL from where the method is not allowed
+     * Set the URL from where the method is not allowed.
+     *
+     * @since 0.4.0
      *
      * @example
      * $exception = new MethodNotAllowedException("method GET not allowed");
