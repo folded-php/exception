@@ -16,6 +16,8 @@ class MethodNotAllowedException extends Exception
     /**
      * The HTTP method that are allowed.
      *
+     * @var array<string>
+     *
      * @since 0.1.0
      */
     private array $allowedMethods;
@@ -57,6 +59,8 @@ class MethodNotAllowedException extends Exception
 
     /**
      * Get the allowed HTTP methods.
+     *
+     * @return array<string>
      *
      * @since 0.1.0
      *
@@ -112,6 +116,8 @@ class MethodNotAllowedException extends Exception
 
     /**
      * Set the allowed HTTP methods.
+     *
+     * @param array<string> $methods The allowed HTTP methods.
      *
      * @since 0.1.0
      *

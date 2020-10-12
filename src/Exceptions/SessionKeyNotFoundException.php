@@ -24,9 +24,9 @@ class SessionKeyNotFoundException extends OutOfRangeException
     /**
      * Constructor.
      *
-     * @param null|mixed $message  The error message.
-     * @param int        $code     The error code.
-     * @param Exception  $previous The exception that have produced this exception.
+     * @param null|mixed     $message  The error message.
+     * @param int            $code     The error code.
+     * @param null|Throwable $previous The exception that have produced this exception.
      *
      * @since 0.3.0
      *
